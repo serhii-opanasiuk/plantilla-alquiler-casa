@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Serhii Opanasiuk">
+    <title>Tabla</title>
+     <!-- Estilos-->
+     <link rel="stylesheet" href="./styles/estilos.css">
+     <link rel="stylesheet" href="maqueta.css">
+     <!--Favicon-->
+     <link rel="icon" type="image/jpg" href="./images/favicon.ico">
+     <!-- Enlace al archivo CSS de Bootstrap 5 -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Logo + navbar --> 
+<div class="logo-nav col-12">
+  <img class="logo" src="./images/ParagonSinBg.svg" alt="Paragon logo">
+  <h2 class="adigiyana">¡Bienvenidos al Bootstrap!</h2>
+  <img class="logo" src="./images/ParagonSinBg.svg" alt="Paragon logo">
+</div>
+<nav class="navbar navbar-light border-bottom border-body justify-content-center">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="col-8 col-xl-4 text-center">
+        <a href="https://www.eniun.com/"><img class="navbar-brand" src="https://www.eniun.com/wp-content/uploads/ENIUN@2x.png" alt="Logotipo" id="logotipo"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./tabla.html">Tabla</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Enlaces
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Enlace 1</a></li>
+              <li><a class="dropdown-item" href="#">Enlace 2</a></li>
+              <li><a class="dropdown-item" href="#">Enlace 3</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+          <!--Breadcrumbs-->
+          <div class="container-fluid row justify-content-center">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                  <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Tabla</li>
+                </ol>
+              </nav>
+          </div>
+    </nav>
+<!--Cuerpo-->
+    <div class="container table-responsive" style="overflow-y: scroll;">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar...">
+        <h2 class="adigiyana text-center text-white bg-dark">Lista de profesores</h2>
+        <table class="table table-bordered table-hover table-stripped-columns table-responsive" id="dataTable">
+            <thead>
+              <tr class="table-danger">
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Correo electrónico</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-secondary">
+                <th scope="row">1</th>
+                <td>Alberto</td>
+                <td>39</td>
+                <td>alberto@gmail.com</td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">2</th>
+                <td>Laura</td>
+                <td>29</td>
+                <td>laura@gmail.com</td>
+              </tr>
+              <tr class="table-info">
+                <th scope="row">3</th>
+                <td>Sergio</td>
+                <td>38</td>
+                <td>sergio@gmail.com</td>
+              </tr>
+            </tbody>
+          </table>
+    </div> 
+    <!--Paginación-->
+    <nav aria-label="Paginacion">
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="./index.html"><span aria-hidden="true">&laquo;</span></a></li>
+          <li class="page-item"><a class="page-link" href="./index.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="./contacto.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="./tabla.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="./tabla.html"><span aria-hidden="true">&raquo;</span></a></li>
+        </ul>
+      </nav>
+<!--Pie-->
+    <div class="container-fluid my-5">
+        <footer class="text-white text-center text-lg-start bg-primary">
+            <!-- Grid container -->
+            <div class="container p-4">
+            <!--Grid row-->
+                <div class="row mt-4">
+                    <!--Grid column-->
+                    <div class="row">
+                        <h5 class="mb-4 col-6 text-center"><a href="https://www.eniun.com/" class="text-white">Eniun.com</a></h5>     
+                        <p class="col-6 text-center">Calidad es lo que hacemos</p>
+                    </div>
+                </div>
+            <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-white" href="https://portal.edu.gva.es/iesmarenostrum/es/inicio/">IES Mare Nostrum</a>
+            </div>
+            <!-- Copyright -->
+        </footer>     
+    </div>
+    <!-- End of .container -->
+    <script>
+        // Se obtiene una referencia al campo de entrada de búsqueda
+        const searchInput = document.getElementById('searchInput');
+       
+        // Se obtiene una referencia a la tabla y a las filas de datos
+        const dataTable = document.getElementById('dataTable');
+        const dataRows = dataTable.getElementsByTagName('tr');
+      
+        // Se agrega un evento de escucha al campo de entrada de búsqueda
+        searchInput.addEventListener('input', function() {
+          const searchText = searchInput.value.toLowerCase();
+      
+          // Se itera sobre las filas de datos y se muestra u oculta cada fila según el texto de búsqueda
+          for (let i = 1; i < dataRows.length; i++) {
+            const rowData = dataRows[i].innerText.toLowerCase();
+      
+            if (rowData.includes(searchText)) {
+              dataRows[i].style.display = '';
+            } else {
+              dataRows[i].style.display = 'none';
+            }
+          }
+        });
+    </script>
+<!-- Enlace a los archivos JavaScript de Bootstrap 5 por separado, popper debe ir primero (popper.js y bootstrap.min.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

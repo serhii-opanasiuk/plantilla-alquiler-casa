@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Serhii Opanasiuk">
+    <title>Práctica 6 Bootstrap. Serhii Opanasiuk</title>
+    <!-- Estilos-->
+    <link rel="stylesheet" href="maqueta.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/jpg" href="./images/favicon.ico">
+    <!-- Enlace al archivo CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
+</head>
+<body>
+    <!--Imágen de logo-->
+    <div class="logo-imagen">
+        <img class="logo" src="./images/ParagonSinBg.svg" alt="Paragon logo">
+        <h1 class="adigiyana">Práctica 6 de Bootstrap</h1>
+        <img class="logo" src="./images/ParagonSinBg.svg" alt="Paragon logo">
+    </div>
+    <h1 class="divisor adigiyana">Estructura del sitio WEB</h1>
+    <!--Cuerpo-->
+        <div class="container pt-1 pb-1">
+            <div class="col-12 border border-dark border-1" id="header">Cabecera</div>
+        </div>
+        <div class="container pt-1 pb-1" id="cuerpo">
+            <div class="row">
+                <div class="col-12 col-md-2 d-none d-sm-none d-md-block">
+                    <div class="h-100 v-100 
+                    border border-dark border-1 pt-1 pb-1" id="aside">Menú lateral</div>                   
+                </div>
+                <div class="col-12 col-md-10">
+                    <div class="row">
+                        <div class="col-12 pt-1 pb-1">
+                            <div class="border border-dark border-1" id="nav">
+                                Menú de navegación
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6 pt-1 pb-1">
+                            <div class="border border-dark border-1 articulo">Artículo azul</div>
+                        </div>
+                        <div class="col-12 col-xl-6 pt-1 pb-1">
+                            <div class="border border-dark border-1 articulo">Artículo azul</div>
+                        </div>
+                        <div class="col-6 col-xl-3 pt-1 pb-1 pl-1 pr-1">
+                            <div class="border border-dark border-1 bloque">Bloque marrón</div>
+                        </div>
+                        <div class="col-6 col-xl-3 pt-1 pb-1">
+                            <div class="border border-dark border-1 bloque">Bloque marrón</div>
+                        </div>
+                        <div class="col-6 col-xl-3 pt-1 pb-1">
+                            <div class="border border-dark border-1 bloque">Bloque marrón</div>
+                        </div>
+                        <div class="col-6 col-xl-3 pt-1 pb-1">
+                            <div class="border border-dark border-1 bloque">Bloque marrón</div>
+                        </div>   
+                    </div>          
+                </div>
+            </div>
+        </div>
+        <div class="container pt-1 pb-1">
+            <div class="border border-dark border-1" id="footer">Píe de la página</div>
+        </div>
+    <!-- Enlace a los archivos JavaScript de Bootstrap 5 por separado, popper debe ir primero (popper.js y bootstrap.min.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
